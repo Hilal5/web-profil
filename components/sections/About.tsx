@@ -62,7 +62,7 @@ export default function About() {
             </a>
 
             <a
-              href="/cv/CV_Kreatif_Hilal_Prayogi.pdf"
+              href="/cv/CV_KREATIF_HILAL_PRAYOGI.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="cv-button cv-button-secondary"
