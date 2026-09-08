@@ -1,36 +1,354 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hilal Prayogi — Personal Portfolio
 
-## Getting Started
+Personal portfolio website milik **Hilal Prayogi**, seorang Web Developer dengan pengalaman dalam pengembangan aplikasi web menggunakan Angular, CodeIgniter 3, Laravel, React, dan REST API.
 
-First, run the development server:
+Website ini dibuat sebagai media untuk memperkenalkan profil, pengalaman, project, kemampuan teknis, serta informasi kontak.
+
+---
+
+## ✨ Features
+
+- Responsive personal portfolio
+- Modern dark theme
+- Hero section
+- About section dengan profile photo
+- Education information
+- Work experience
+- Project showcase
+- Technical skills
+- Contact section
+- Email contact button
+- Responsive layout untuk desktop dan mobile
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- HTML
+- CSS
+
+### Web Development
+
+- Angular
+- Laravel
+- CodeIgniter 3
+- REST API
+
+### Tools
+
+- Git
+- GitHub
+- Microsoft Office
+
+---
+
+## 📁 Project Structure
+
+```text
+my-next-app/
+│
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── layout/
+│   │   ├── Footer.tsx
+│   │   └── Navbar.tsx
+│   │
+│   ├── sections/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Projects.tsx
+│   │   └── Skills.tsx
+│   │
+│   └── ui/
+│       ├── Button.tsx
+│       ├── ProjectCard.tsx
+│       └── SectionHeading.tsx
+│
+├── data/
+│   ├── experience.ts
+│   ├── profile.ts
+│   ├── projects.ts
+│   └── skills.ts
+│
+├── lib/
+│   └── utils.ts
+│
+├── public/
+│   └── images/
+│       └── profile/
+│           └── pass-photo.png
+│
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## 👨‍💻 About
+
+Saya adalah lulusan **S1 Sistem Komputer** dari **Universitas Pembangunan Panca Budi** dengan IPK **3.82**.
+
+Memiliki pengalaman dalam pengembangan aplikasi web, integrasi API, backend, pengolahan data, serta pengembangan sistem berbasis website.
+
+Saya memiliki pengalaman menggunakan beberapa teknologi seperti:
+
+- Angular
+- React
+- Laravel
+- CodeIgniter 3
+- REST API
+
+Saya juga memiliki kemampuan dalam komunikasi, kerja sama tim, kreativitas, adaptasi, dan memiliki motivasi untuk terus belajar.
+
+---
+
+## 💼 Experience
+
+### Web Developer Intern — PT Xtend Integrasi Indonesia
+
+**2024 — Medan, Sumatera Utara**
+
+Mengembangkan aplikasi web **My Movie** menggunakan Angular yang terintegrasi dengan TMDB API.
+
+Fitur aplikasi meliputi:
+
+- Film unggulan
+- Rilisan terbaru
+- Rating film
+- Gambar film
+- Trailer
+
+**Technologies:**
+
+```text
+Angular
+REST API
+TMDB API
+```
+
+---
+
+### Web Developer Intern — Balai Teknik Perkeretaapian Kelas I Medan
+
+**2023 — 2024 — Medan, Sumatera Utara**
+
+Mengembangkan backend aplikasi **Surat Perintah Perjalanan Dinas** berbasis website menggunakan CodeIgniter 3.
+
+Fokus pengembangan meliputi:
+
+- Logika sistem
+- Alur data
+- Backend
+- Integrasi database
+- Integrasi antara interface dan database
+
+**Technologies:**
+
+```text
+CodeIgniter 3
+Backend
+Database
+```
+
+---
+
+## 🚀 Projects
+
+### My Movie
+
+Platform informasi film yang dikembangkan menggunakan Angular dan terintegrasi dengan TMDB API.
+
+Project ini menampilkan informasi seperti:
+
+- Featured movies
+- Latest releases
+- Rating
+- Movie images
+- Trailer
+
+**Technologies:**
+
+```text
+Angular
+REST API
+TMDB
+```
+
+---
+
+### Surat Perintah Perjalanan Dinas
+
+Aplikasi berbasis website untuk membantu proses administrasi perjalanan dinas pegawai.
+
+Fokus pengembangan berada pada backend, logika sistem, alur data, dan integrasi database.
+
+**Technologies:**
+
+```text
+CodeIgniter 3
+Backend
+Database
+```
+
+---
+
+## 🧰 Skills
+
+### Frontend
+
+- React
+- Angular
+- Next.js
+- JavaScript
+- TypeScript
+- HTML
+- CSS
+
+### Backend
+
+- Laravel
+- CodeIgniter 3
+- REST API
+
+### Tools & Others
+
+- Testing
+- Database
+- Microsoft Office
+- Git
+- GitHub
+
+---
+
+## 🎓 Education
+
+### S1 Sistem Komputer
+
+**Universitas Pembangunan Panca Budi**
+
+```text
+2021 — 2026
+IPK: 3.82
+```
+
+---
+
+## 📜 Certification
+
+### Office Application
+
+**LSP Teknologi Digital**
+
+```text
+July 2025 — July 2028
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Hilal5/web-profil.git
+```
+
+### 2. Masuk ke Directory
+
+```bash
+cd web-profil
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Jalankan Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Kemudian buka:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🏗️ Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+Untuk membuat production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Kemudian jalankan:
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Design
+
+Portfolio menggunakan konsep:
+
+- Dark modern interface
+- Minimalist layout
+- Developer-focused design
+- Responsive design
+- Clean typography
+- Teal & green color palette
+
+### Color Palette
+
+| Color | Hex |
+|---|---|
+| Background | `#092328` |
+| Surface | `#12544F` |
+| Primary | `#2A835F` |
+| Accent | `#8BBB92` |
+
+---
+
+## 📬 Contact
+
+**Hilal Prayogi**
+
+Email:
+
+```text
+hilalprayogi24@gmail.com
+```
+
+Location:
+
+```text
+Sumatera Utara, Indonesia
+```
+
+---
+
+## 📄 License
+
+This project is a personal portfolio website owned by **Hilal Prayogi**.
+
+Feel free to use this project as inspiration for your own portfolio, but please replace the personal information, images, projects, and content with your own.
