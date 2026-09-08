@@ -3,6 +3,7 @@
 Personal portfolio website milik **Hilal Prayogi**, seorang Web Developer dengan pengalaman dalam pengembangan aplikasi web menggunakan Angular, CodeIgniter 3, Laravel, React, dan REST API.
 
 Website ini dibuat sebagai media untuk memperkenalkan profil, pengalaman, project, kemampuan teknis, serta informasi kontak.
+[live](https://web-profil-olive.vercel.app/)
 
 ---
 
