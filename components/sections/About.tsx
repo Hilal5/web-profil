@@ -50,6 +50,28 @@ export default function About() {
             </p>
           </div>
 
+          <div className="about-cv">
+            <a
+              href="/cv/CV_ATS_Hilal_Prayogi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-button cv-button-primary"
+            >
+              Download CV ATS
+              <span>↗</span>
+            </a>
+
+            <a
+              href="/cv/CV_Kreatif_Hilal_Prayogi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-button cv-button-secondary"
+            >
+              View Creative CV
+              <span>↗</span>
+            </a>
+          </div>
+
           {/* STATISTIK */}
           <div className="stats">
             <div className="stat">

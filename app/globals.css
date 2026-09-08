@@ -400,27 +400,6 @@ a {
 /* ================================
    ABOUT
 ================================ */
-
-.about-grid {
-  display: grid;
-
-  grid-template-columns: 1.2fr 0.8fr;
-
-  gap: 80px;
-}
-
-.about-text {
-  color: var(--muted);
-
-  font-size: 17px;
-
-  line-height: 1.9;
-}
-
-.about-text p + p {
-  margin-top: 20px;
-}
-
 .highlight {
   color: var(--foreground);
 }
@@ -484,6 +463,81 @@ a {
   font-weight: 700;
 }
 
+/* ================================
+   ABOUT CV
+================================ */
+
+.about-cv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  margin-top: 35px;
+}
+
+.cv-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 13px 20px;
+
+  border: 1px solid var(--border);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cv-button span {
+  transition: transform 0.25s ease;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+}
+
+.cv-button:hover span {
+  transform: translate(3px, -3px);
+}
+
+.cv-button-primary {
+  background: var(--primary);
+
+  border-color: var(--primary);
+
+  color: var(--foreground);
+}
+
+.cv-button-primary:hover {
+  background: var(--accent);
+
+  border-color: var(--accent);
+
+  color: var(--background);
+}
+
+.cv-button-secondary {
+  background: transparent;
+
+  color: var(--accent);
+}
+
+.cv-button-secondary:hover {
+  background: rgba(139, 187, 146, 0.08);
+
+  border-color: var(--border-strong);
+}
+
 
 /* ================================
    ABOUT GRID
@@ -491,16 +545,21 @@ a {
 
 .about-grid {
   display: grid;
-
   grid-template-columns: 320px minmax(0, 1fr) 260px;
-
   gap: 60px;
-
   align-items: start;
 }
 
 .about-text {
   max-width: 620px;
+
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.about-text p + p {
+  margin-top: 20px;
 }
 
 /* ================================
@@ -907,11 +966,42 @@ a {
 
     align-items: flex-start;
   }
+
+  .about-grid {
+  grid-template-columns: 280px 1fr;
+
+  gap: 45px;
+  }
+
+  .about-photo {
+    grid-row: span 2;
+  }
+
+  .about-photo-frame {
+    max-width: 280px;
+  }
+
+  .about-photo-label {
+    max-width: 280px;
+  }
+
+  .stats {
+    grid-column: 2;
+  }
 }
 
 @media (max-width: 650px) {
   .container {
     width: min(100% - 28px, 1120px);
+  }
+
+  .about-cv {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+  .cv-button {
+    width: 100%;
   }
 
   .hero {
@@ -964,5 +1054,37 @@ a {
 
   .footer-inner {
     flex-direction: column;
+  }
+
+  .about-grid {
+  grid-template-columns: 1fr;
+
+  gap: 40px;
+  }
+
+  .about-photo {
+    grid-row: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .about-photo-frame {
+    max-width: 300px;
+  }
+
+  .about-photo-label {
+    max-width: 300px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .stats {
+    grid-column: auto;
   }
 }
