@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+#ignore file
+/codegpt/
+/codeclaude/
+
 # production
 /build
 
